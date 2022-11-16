@@ -35,7 +35,7 @@ const Dashboard = (props) => {
     } else {
       setWish("Good Evening!");
     }
-    document.title="Dashboard"
+    document.title="Admin"
   }, [])
 
   return (
