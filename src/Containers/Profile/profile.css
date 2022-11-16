@@ -1,0 +1,56 @@
+
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:rgb(145, 160, 233);
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:rgb(84, 105, 212);
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: var(--theme-color);
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgb(110, 128, 218,1), rgb(84, 105, 212,2));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgb(110, 128, 218,1), rgb(84, 105, 212,2))
+    }
+
+
